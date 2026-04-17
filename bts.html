@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio BTS SIO</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+            <span class="text-xl font-bold">Mon Portfolio</span>
+
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="index.html" class="hover:text-blue-400">Accueil</a>
+                <a href="about.html" class="hover:text-blue-400">À propos</a>
+                <a href="school.html" class="hover:text-blue-400">École</a>
+                <a href="bts.html" class="hover:text-blue-400">BTS</a>
+                <a href="company.html" class="hover:text-blue-400">Entreprise</a>
+                <a href="projects.html" class="hover:text-blue-400">Projets</a>
+                <a href="legal.html" class="hover:text-blue-400">Veille juridique</a>
+                <a href="tech.html" class="hover:text-blue-400">Veille techno</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENU -->
+
+    <main class="max-w-5xl mx-auto p-6">
+        <div class="bg-white rounded-xl shadow p-6">
+            <p>
+                Le <strong>BTS SIO</strong> est une formation en <strong>deux ans</strong> qui prépare les étudiants
+                aux métiers de l’informatique au sein des <strong>entreprises</strong> et des
+                <strong>administrations</strong>. Elle laisse le choix entre deux options :
+            </p>
+
+            <ul class="list-disc ml-6 mt-3">
+                <li>
+                    <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux) :
+                    cette option se concentre sur l’administration des réseaux et des serveurs,
+                    ainsi que sur l’installation, la configuration et la sécurisation des systèmes
+                    informatiques.
+                </li>
+                <li class="mt-2">
+                    <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) :
+                    cette option se concentre sur la conception, le développement et le test
+                    d’applications <strong>web ou mobiles</strong>. Les étudiants apprennent également
+                    à travailler sur des <strong>bases de données</strong> et la <strong>gestion des
+                        utilisateurs</strong>.
+                </li>
+            </ul>
+
+            <hr class="my-6">
+
+            <h2 class="text-xl font-bold mb-2">Objectifs de la formation</h2>
+            <p>
+                Le BTS vise à former des professionnels capables de <strong>concevoir</strong>,
+                <strong>déployer</strong> et <strong>maintenir</strong> des solutions informatiques tout en
+                répondant aux besoins concrets des <strong>entreprises</strong>.
+            </p>
+
+            <hr class="my-6">
+
+            <h2 class="text-xl font-bold mb-2">Matières principales et compétences développées</h2>
+            <ul class="list-disc ml-6 space-y-2">
+                <li>
+                    <strong>Anglais</strong> : communication écrite et orale dans un contexte professionnel.
+                </li>
+                <li>
+                    <strong>Mathématiques pour l’informatique</strong> : logique et raisonnement algorithmique.
+                </li>
+                <li>
+                    <strong>CEJM</strong> : compréhension du fonctionnement des entreprises et du droit qui les régule.
+                </li>
+                <li>
+                    <strong>Support et mise à disposition de services informatiques</strong> :
+                    installation, configuration et maintenance de services informatiques.
+                </li>
+                <li>
+                    <strong>Cybersécurité des services informatiques</strong> :
+                    application des bonnes pratiques de sécurité, protection des données,
+                    gestion des droits d’accès et prévention des menaces.
+                </li>
+                <li>
+                    <strong>Conception et développement d’applications (SLAM)</strong> :
+                    analyse des besoins d’un client, conception et développement
+                    d’applications web, logicielles ou mobiles.
+                </li>
+                <li>
+                    <strong>Administration des systèmes et des réseaux (SISR)</strong> :
+                    déploiement et sécurisation de serveurs, gestion des réseaux d’entreprise
+                    et assurance de la disponibilité des services.
+                </li>
+            </ul>
+
+            <hr class="my-6">
+
+            <h2 class="text-xl font-bold mb-2">Débouchés professionnels</h2>
+
+            <p class="font-semibold mt-2">Option SISR :</p>
+            <ul class="list-disc ml-6">
+                <li>Technicien d’infrastructure</li>
+                <li>Technicien en télécommunications</li>
+                <li>Technicien de maintenance</li>
+                <li>Technicien support et déploiement</li>
+                <li>Technicien systèmes et réseaux</li>
+                <li>Analyste d’études</li>
+                <li>Webmaster</li>
+            </ul>
+
+            <p class="font-semibold mt-4">Option SLAM :</p>
+            <ul class="list-disc ml-6">
+                <li>Analyste programmeur</li>
+                <li>Développeur (web, applications informatiques ou mobiles)</li>
+                <li>Technicien d’études informatiques</li>
+            </ul>
+
+            <hr class="my-6">
+
+            <h2 class="text-xl font-bold mb-2">Poursuite d’études</h2>
+            <ul class="list-disc ml-6">
+                <li>Licence professionnelle mention métiers de l’informatique</li>
+                <li>Troisième année de BUT</li>
+                <li>École d’ingénieur</li>
+                <li>Troisième année de licence générale en informatique</li>
+            </ul>
+        </div>
+    </main>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-sm text-gray-500 mt-10 pb-6">
+        © <span id="year"></span> – Portfolio BTS SIO
+    </footer>
+
+    <script>
+        // Année automatique
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

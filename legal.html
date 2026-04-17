@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio BTS SIO</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+            <span class="text-xl font-bold">Mon Portfolio</span>
+
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="index.html" class="hover:text-blue-400">Accueil</a>
+                <a href="about.html" class="hover:text-blue-400">À propos</a>
+                <a href="school.html" class="hover:text-blue-400">École</a>
+                <a href="bts.html" class="hover:text-blue-400">BTS</a>
+                <a href="company.html" class="hover:text-blue-400">Entreprise</a>
+                <a href="projects.html" class="hover:text-blue-400">Projets</a>
+                <a href="legal.html" class="hover:text-blue-400">Veille juridique</a>
+                <a href="tech.html" class="hover:text-blue-400">Veille techno</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENU -->
+
+    <main class="max-w-5xl mx-auto p-6">
+        <div class="bg-white rounded-xl shadow p-6">
+            <h1 class="text-2xl font-bold mb-6">Veille juridique</h1>
+
+            <p>
+                Dans le domaine du numérique, plusieurs amélioration législatives récentes change la maniere de
+                developper des applications.
+                La <strong>protection des données personnelles</strong> est l'un des objectifs principal, notamment avec
+                l’application stricte du <strong>RGPD</strong> qui vise a encadré la collecte, le traitement et la
+                conservation des données.
+            </p>
+
+            <p>
+                Le respect du RGPD est important pour garantir la confidentialité des données et éviter des sanctions.
+                Les professionnels doivent assurer la transparence envers les utilisateurs, obtenir leur consentement,
+                et leur permettre d’exercer leurs droits (accès, rectification, suppression).
+            </p>
+
+            <p>
+                S'addapter au RGPD est un défi important a cause de l'augmentation des volumes de données et la
+                quantiter de traitements réalisés.
+            </p>
+        </div>
+    </main>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-sm text-gray-500 mt-10 pb-6">
+        © <span id="year"></span> – Portfolio BTS SIO
+    </footer>
+
+    <script>
+        // Année automatique
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

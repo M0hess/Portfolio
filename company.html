@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio BTS SIO</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+            <span class="text-xl font-bold">Mon Portfolio</span>
+
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="index.html" class="hover:text-blue-400">Accueil</a>
+                <a href="about.html" class="hover:text-blue-400">À propos</a>
+                <a href="school.html" class="hover:text-blue-400">École</a>
+                <a href="bts.html" class="hover:text-blue-400">BTS</a>
+                <a href="company.html" class="hover:text-blue-400">Entreprise</a>
+                <a href="projects.html" class="hover:text-blue-400">Projets</a>
+                <a href="legal.html" class="hover:text-blue-400">Veille juridique</a>
+                <a href="tech.html" class="hover:text-blue-400">Veille techno</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENU -->
+
+    <main class="max-w-5xl mx-auto p-6">
+        <div class="bg-white rounded-xl shadow p-6">
+            <h1 class="text-2xl font-bold mb-4">Entreprise d'alternance</h1>
+            <p>
+                J’effectue actuellement mon alternance au sein de l’entreprise <strong>F.Y Bat</strong>, spécialisée
+                dans le secteur du <strong>bâtiment</strong> et située à <strong>Clichy-sous-Bois</strong>.
+                C’est une petite entreprise qui s’occupe notamment de la vente de matériaux de construction.
+            </p>
+
+            <p class="mt-4">
+                Au sein de l’entreprise, du a la difficulté à trouver une alternance dans le domaine de l’informatique
+                sans expérience, mes missions sont très variées.
+            </p>
+
+            <p class="mt-4">
+                De plus, comme je suis parfois en télétravail, j'effectue a la fois du support réseau basique, comme
+                reconnecter un poste au serveur, configurer une imprimante sur le réseau, etc.
+                Et je fais egalement des tâches administratives, comme la réalisation de devis ou la gestion de la
+                relation client.
+            </p>
+
+            <h2 class="text-xl font-bold mt-6 mb-3">Journée type</h2>
+            <p>
+                Une journée classique en entreprise commence par verifier les taches du jour, ensuite j'effectue le
+                suivi des demandes clients et fournisseurs.
+                Je peux ensuite faire un peu de reseau simple, comme reconnecter une imprimante au reseau.
+                L’après-midi je fais la pluspart du temps de la gestion administrative : préparation de devis, mise à
+                jour de dossiers.
+            </p>
+        </div>
+    </main>
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="text-center text-sm text-gray-500 mt-10 pb-6">
+        © <span id="year"></span> – Portfolio BTS SIO
+    </footer>
+
+    <script>
+        // Année automatique
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
