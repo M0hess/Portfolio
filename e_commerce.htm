@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio BTS SIO</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- NAVBAR -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+            <span class="text-xl font-bold">Mon Portfolio</span>
+
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="index.html" class="hover:text-blue-400">Accueil</a>
+                <a href="about.html" class="hover:text-blue-400">À propos</a>
+                <a href="school.html" class="hover:text-blue-400">École</a>
+                <a href="bts.html" class="hover:text-blue-400">BTS</a>
+                <a href="company.html" class="hover:text-blue-400">Entreprise</a>
+                <a href="projects.html" class="hover:text-blue-400">Projets</a>
+                <a href="legal.html" class="hover:text-blue-400">Veille juridique</a>
+                <a href="tech.html" class="hover:text-blue-400">Veille techno</a>
+                <a href="projects.html" class="text-blue-600 hover:underline">← Retour</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-10">
+        <h2 class="text-3xl font-bold mb-2">Site E-commerce</h2>
+        <p class="text-gray-600">
+            Développement d’un site e-commerce complet avec Laravel, incluant gestion des produits, utilisateurs et commandes.
+        </p>
+    </section>
+
+    <!-- Infos -->
+    <section class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow">
+            <h3 class="text-xl font-semibold mb-4">Technologies utilisées</h3>
+            <ul class="list-disc ml-5 space-y-1">
+                <li>Laravel (Backend PHP)</li>
+                <li>Blade (Templates)</li>
+                <li>MySQL (Base de données)</li>
+                <li>Tailwind CSS (Frontend)</li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+            <h3 class="text-xl font-semibold mb-4">Fonctionnalités</h3>
+            <ul class="list-disc ml-5 space-y-1">
+                <li>Gestion des produits</li>
+                <li>Panier utilisateur</li>
+                <li>Système de commande</li>
+                <li>Authentification utilisateur</li>
+                <li>Interface d’administration</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Architecture -->
+    <section class="max-w-6xl mx-auto px-6 py-10">
+        <h3 class="text-2xl font-bold mb-6">Architecture du projet</h3>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+            <p class="mb-4">
+                Le projet suit une architecture MVC avec Laravel :
+            </p>
+
+            <ul class="list-disc ml-5 space-y-1">
+                <li><strong>Frontend</strong> : Blade + Tailwind CSS</li>
+                <li><strong>Backend</strong> : Laravel (Controllers, Models, Routes)</li>
+                <li><strong>Base de données</strong> : Sqlite pour stocker utilisateurs, produits et commandes</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="max-w-6xl mx-auto px-6 py-10">
+        <h3 class="text-2xl font-bold mb-6">Captures d’écran</h3>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-4 rounded-xl shadow md:col-span-2">
+                <img src="img/Homepage2.png" alt="Page produits" class="rounded-lg">
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow md:col-span-2">
+                <img src="img/Login.png" alt="Connexion" class="rounded-lg">
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow md:col-span-2">
+                <img src="img/AdminDashboard.png" alt="Admin dashboard" class="rounded-lg">
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow md:col-span-2">
+                <img src="img/UserDashboard.png" alt="User dashboard" class="rounded-lg">
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow md:col-span-2">
+                <img src="img/ProductCreation.png" alt="Creation produits" class="rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center text-sm text-gray-500 mt-10 pb-6">
+        © <span id="year"></span> – Portfolio BTS SIO
+    </footer>
+
+    <script>
+        // Année automatique
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
