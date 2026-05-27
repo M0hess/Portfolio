@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Chatbot IA</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio BTS SIO</title>
+
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-gray-100 text-gray-800">
 
-    <!-- Header -->
-    <header class="bg-white shadow">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Mon Portfolio</h1>
-            <a href="index.html" class="text-blue-600 hover:underline">← Retour</a>
-        </div>
-    </header>
+    <!-- NAVBAR -->
+    <nav class="bg-gray-900 text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex flex-wrap justify-between items-center">
+            <span class="text-xl font-bold">Mon Portfolio</span>
 
+            <div class="flex flex-wrap gap-4 text-sm">
+                <a href="index.html" class="hover:text-blue-400">Accueil</a>
+                <a href="about.html" class="hover:text-blue-400">À propos</a>
+                <a href="school.html" class="hover:text-blue-400">École</a>
+                <a href="bts.html" class="hover:text-blue-400">BTS</a>
+                <a href="company.html" class="hover:text-blue-400">Entreprise</a>
+                <a href="projects.html" class="hover:text-blue-400">Projets</a>
+                <a href="legal.html" class="hover:text-blue-400">Veille juridique</a>
+                <a href="tech.html" class="hover:text-blue-400">Veille techno</a>
+                <a href="projects.html" class="text-blue-600 hover:underline">← Retour</a>
+            </div>
+        </div>
+    </nav>
     <!-- Hero -->
     <section class="max-w-6xl mx-auto px-6 py-10">
         <h2 class="text-3xl font-bold mb-2">Chatbot IA</h2>
         <p class="text-gray-600">
-            Développement d’un chatbot utilisant un modèle IA via Ollama avec une architecture full-stack moderne.
+            Développement d’un chatbot utilisant un modèle IA via Ollama.
         </p>
     </section>
 
@@ -40,10 +53,10 @@
         <div class="bg-white p-6 rounded-xl shadow">
             <h3 class="text-xl font-semibold mb-4">Fonctionnalités</h3>
             <ul class="list-disc ml-5 space-y-1">
-                <li>Chat en temps réel avec IA</li>
+                <li>Chat en temps réel</li>
                 <li>Gestion des conversations</li>
                 <li>Stockage des messages en base de données</li>
-                <li>Interface utilisateur responsive</li>
+                <li>Interface utilisateur</li>
             </ul>
         </div>
     </section>
@@ -54,25 +67,33 @@
 
         <div class="grid md:grid-cols-2 gap-6">
             <div class="bg-white p-4 rounded-xl shadow">
-                <img src="img/chatbot1.png" alt="Chatbot interface" class="rounded-lg">
+                <img src="img/Homepage.png" alt="Chatbot interface" class="rounded-lg">
             </div>
 
             <div class="bg-white p-4 rounded-xl shadow">
-                <img src="img/chatbot2.png" alt="Chatbot conversation" class="rounded-lg">
+                <img src="img/Dashboard.png" alt="Dashboard" class="rounded-lg">
             </div>
 
             <div class="bg-white p-4 rounded-xl shadow md:col-span-2">
-                <img src="img/chatbot3.png" alt="Architecture" class="rounded-lg">
+                <img src="img/Register.png" alt="Page d'inscription" class="rounded-lg">
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow md:col-span-2">
+                <img src="img/Graph.png" alt="Architecture" class="rounded-lg">
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white shadow mt-10">
-        <div class="max-w-6xl mx-auto px-6 py-4 text-center text-gray-600">
-            © 2026 - Mon Portfolio
-        </div>
+    <!-- FOOTER -->
+    <footer class="text-center text-sm text-gray-500 mt-10 pb-6">
+        © <span id="year"></span> – Portfolio BTS SIO
     </footer>
 
+    <script>
+        // Année automatique
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
 </body>
+
 </html>
